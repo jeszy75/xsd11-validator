@@ -70,6 +70,7 @@
                             <mainClass>hu.unideb.inf.validator.XSD11Validator</mainClass>
                         </transformer>
                     </transformers>
+                    <createDependencyReducedPom>false</createDependencyReducedPom>
                 </configuration>
                 <executions>
                     <execution>
