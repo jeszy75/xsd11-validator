@@ -29,6 +29,7 @@ public class XSD11Validator {
             validator.setErrorHandler(new SimpleErrorHandler(false));
             validator.validate(instance);
         } catch (SAXParseException e) {
+            // Already handled by the error handler
         } catch (Exception e) {
             System.err.println(e.getMessage());
         }

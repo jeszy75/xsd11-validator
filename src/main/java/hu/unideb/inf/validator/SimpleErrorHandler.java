@@ -39,7 +39,7 @@ public class SimpleErrorHandler implements ErrorHandler {
         throw e;
     }
 
-    private void printException(String prefix, SAXParseException e) throws SAXException {
+    private void printException(String prefix, SAXParseException e) {
         out.format("[%s] %s:%d:%d: %s%n", prefix, e.getSystemId(), e.getLineNumber(), e.getColumnNumber(), e.getMessage());
     }
 
